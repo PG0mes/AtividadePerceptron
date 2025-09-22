@@ -7,7 +7,7 @@
 
 ## 1. Iris
 
-## 1. Descrição do Dataset
+- 1. Descrição do Dataset
 
 Número de amostras e features: Foram utilizadas 100 amostras (as duas primeiras classes do dataset Iris) e 2 features selecionadas (comprimento da sépala e comprimento da pétala).
 
@@ -15,7 +15,7 @@ Distribuição das classes: Perfeitamente balanceado, com 50 amostras da classe 
 
 É linearmente separável? Sim. As duas classes selecionadas com as features escolhidas são classicamente conhecidas por serem perfeitamente separáveis por uma linha reta.
 
-## 2. Resultados
+- 2. Resultados
 
 Acurácia no treino e teste: Como o dataset foi usado integralmente para treino e visualização, a acurácia foi de 100%. Em uma divisão treino/teste, o resultado esperado também seria de 100%.
 
@@ -23,7 +23,7 @@ Número de épocas até convergência: O algoritmo convergiu muito rapidamente, 
 
 Tempo de treinamento: Extremamente baixo.
 
-## 3. Visualizações
+- 3. Visualizações
 
 Gráfico de convergência: Não foi gerado, mas mostraria a acurácia atingindo 100% rapidamente e se estabilizando.
 
@@ -31,7 +31,7 @@ Regiões de decisão: O gráfico mostrou uma linha reta que separava perfeitamen
 
 Matriz de confusão: Uma matriz perfeita, com zeros nas posições de erro (diagonal secundária) e os totais de cada classe na diagonal principal.
 
-## 4. Análise
+- 4. Análise
 
 O perceptron foi adequado para este problema? Sim, foi perfeitamente adequado. O Perceptron é ideal para problemas binários e linearmente separáveis, que é exatamente o cenário deste exercício.
 
@@ -41,7 +41,7 @@ Comparação com suas expectativas: O resultado correspondeu exatamente à expec
 
 ## 2. Moons
 
-## 1. Descrição do Dataset
+- 1. Descrição do Dataset
 
 Número de amostras e features: 200 amostras e 2 features.
 
@@ -49,7 +49,7 @@ Distribuição das classes: Perfeitamente balanceado, com 100 amostras em cada u
 
 É linearmente separável? Não. O dataset é projetado para ter um formato de duas luas entrelaçadas, sendo um exemplo clássico de problema não-linear.
 
-## 2. Resultados
+- 2. Resultados
 
 Acurácia no treino e teste: A acurácia no conjunto de teste ficou em torno de 85% - 90%. Embora não seja aleatória, está longe de ser perfeita.
 
@@ -57,7 +57,7 @@ Número de épocas até convergência: O algoritmo geralmente converge, mas a fr
 
 Tempo de treinamento: Muito baixo.
 
-## 3. Visualizações
+- 3. Visualizações
 
 Gráfico de convergência: Não foi gerado.
 
@@ -65,7 +65,7 @@ Regiões de decisão: A visualização foi a parte mais importante. Ela mostrou 
 
 Matriz de confusão: A matriz mostrou erros de classificação para ambas as classes.
 
-## 4. Análise
+- 4. Análise
 
 O perceptron foi adequado para este problema? Não, foi inadequado. Sua incapacidade de aprender fronteiras não-lineares o tornou a ferramenta errada para este trabalho.
 
@@ -75,7 +75,7 @@ Comparação com suas expectativas: O resultado correspondeu à expectativa. O o
 
 ## 3. Breast
 
-## 1. Descrição do Dataset
+- 1. Descrição do Dataset
 
 Número de amostras e features: 569 amostras e 30 features.
 
@@ -83,7 +83,7 @@ Distribuição das classes: Desbalanceado, com 357 amostras da classe "benigno" 
 
 É linearmente separável? É considerado um problema quase linearmente separável, pois consegue uma boa separação, mas não perfeita.
 
-## 2. Resultados (para a versão com 30 features)
+- 2. Resultados (para a versão com 30 features)
 
 Acurácia no treino e teste: A acurácia no conjunto de teste foi alta, geralmente na faixa de 94% a 97%.
 
@@ -91,7 +91,7 @@ Número de épocas até convergência: O modelo convergiu rapidamente, em poucas
 
 Tempo de treinamento: Muito baixo.
 
-## 3. Visualizações
+- 3. Visualizações
 
 Gráfico de convergência: Não foi gerado.
 
@@ -99,7 +99,7 @@ Regiões de decisão: Não foi possível plotar devido ao alto número de dimens
 
 Matriz de confusão: Esta foi a visualização mais crítica. Ela mostrou que o modelo tinha um bom desempenho geral, mas cometia alguns erros, incluindo os perigosos Falsos Negativos.
 
-## 4. Análise
+- 4. Análise
 
 O perceptron foi adequado para este problema? Em termos de acurácia foi, mas inadequado do ponto de vista médico/prático devido à natureza de seus erros. Ele não oferece controle sobre o tipo de erro que comete.
 
@@ -109,7 +109,7 @@ Comparação com suas expectativas: O resultado mostrou que, embora a acurácia 
 
 ## 4. Ruido
 
-## 1. Descrição do Dataset
+- 1. Descrição do Dataset
 
 Número de amostras e features: 500 amostras e 2 features.
 
@@ -117,7 +117,7 @@ Distribuição das classes: Balanceado (250/250).
 
 É linearmente separável? Não. Por design, o dataset tinha sobreposição entre as classes (controlado por class_sep) e ruído nos rótulos (controlado por flip_y).
 
-## 2. Resultados (Resumo do Experimento)
+- 2. Resultados (Resumo do Experimento)
 
 Acurácia no treino e teste: A acurácia no teste variou significativamente, como esperado. Com alta separação (class_sep=3.0) e baixo ruído (flip_y=0), a acurácia foi alta. Com baixa separação (class_sep=0.5) e alto ruído (flip_y=0.2), a acurácia foi muito baixa, próxima de 50-60%.
 
@@ -125,7 +125,7 @@ Número de épocas até convergência: O early stopping foi implementado com suc
 
 Tempo de treinamento: Baixo para cada execução, mas o experimento completo levou mais tempo devido ao loop.
 
-## 3. Visualizações
+- 3. Visualizações
 
 Gráfico de convergência: Foi possível observar a acurácia de validação oscilando e o treinamento parando quando ela se estabilizava ou piorava, provando a utilidade do early stopping.
 
@@ -133,7 +133,7 @@ Regiões de decisão: Não foram geradas para o relatório final, mas os resulta
 
 Matriz de confusão: Não foi o foco principal, mas refletiria a acurácia observada em cada cenário.
 
-## 4. Análise
+- 4. Análise
 
 O perceptron foi adequado para este problema? Foi adequado para o propósito do estudo: analisar a sensibilidade de um modelo linear a dados imperfeitos.
 
@@ -143,13 +143,13 @@ Comparação com suas expectativas: O experimento confirmou as expectativas de f
 
 ## 5. DLSP
 
-## 1. Descrição do Dataset
+- 1. Descrição do Dataset
 
 Cenário A: 100 amostras (50/50), 2 features. Sim, perfeitamente separável (centros em [-2,-2] e [2,2]).
 
 Cenário B: 100 amostras (50/50), 2 features. Não, não separável (centros em [-0.5,-0.5] e [0.5,0.5]).
 
-## 2. Resultados
+- 2. Resultados
 
 Acurácia no treino e teste:
 
@@ -161,7 +161,7 @@ Número de épocas até convergência: Convergência rápida no Cenário A; mais
 
 Tempo de treinamento: Muito baixo em ambos os cenários.
 
-## 3. Visualizações
+- 3. Visualizações
    
 Gráfico de convergência: Não foi gerado.
 
@@ -173,7 +173,7 @@ No Cenário B, a reta de decisão foi mostrada cortando através dos grupos sobr
 
 Matriz de confusão: Refletiria as acurácias de 100% (Cenário A) e <100% (Cenário B).
 
-## 4. Análise
+- 4. Análise
 
 O perceptron foi adequado para este problema? Perfeitamente adequado para o Cenário A; inadequado para o Cenário B.
 
