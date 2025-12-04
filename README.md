@@ -3,6 +3,7 @@
 ## Aluno
 
 - Pedro Gomes R. Silva
+- Yuri Pessanha Carneiro
 
 
 ## 1. Iris
